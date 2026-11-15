@@ -1,35 +1,60 @@
 # Lal-e-Arifa Memorial Springdales Public School
 
-Responsive single-page website concept for Lal-e-Arifa Memorial Springdales Public School, Palhallan, Pattan, Baramulla, Jammu & Kashmir.
+A refined, responsive, multi-page school website concept for Springdales Public School, Palhallan, Pattan, Baramulla, Jammu & Kashmir.
 
-## Run locally
+## Pages
+
+- Home: school introduction, learning journey, school profile, facilities and visit information
+- Our School: identity, context and educational values
+- Academics: class stages I–X, with clear notes for details that require school confirmation
+- Campus Life: facilities referenced in public directories and illustrative image gallery
+- Admissions: family-oriented enquiry steps without invented fees or dates
+- Contact: location, directions and verified public identifiers
+
+## Local development
+
+Requires Node.js 20.19+ or 22.12+.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Production build:
+Build and preview:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Features
-
-- Responsive school landing page and mobile navigation
-- School introduction, academic stages, facilities and admissions guidance
-- Custom illustrated campus artwork and school monogram
-- Accessible navigation and reduced-motion support
-- Footer credit linking to [faizcasm.me](https://faizcasm.me)
-
-## School information
-
-The site uses a conservative subset of information found in public directories: UDISE reference 01021301422, established 2004, co-educational, English medium, classes I–X, and location at Palhallan / Pattan, Baramulla, Jammu & Kashmir 193121.
-
-Directory information may be stale or inconsistent. Current contact details, fees, timings, affiliation, transport and admission policies must be confirmed directly with the school before launch. The campus illustration is original artwork, not a photograph of the actual campus. This is a proposed website concept and not a claim of official school approval.
-
 ## Deployment
 
-Deploy to Vercel with build command `npm run build` and output directory `dist`.
+Deploy the repository to Vercel or another static hosting provider.
+
+- Framework preset: Vite
+- Build command: `npm run build`
+- Output directory: `dist`
+
+The Vite configuration includes every HTML page in the production build.
+
+## Design and accessibility
+
+- Custom school crest and restrained forest / parchment identity
+- Responsive desktop and mobile navigation
+- Semantic page structure, skip link, focus styles and reduced-motion support
+- Lightweight vanilla JavaScript; no UI framework or runtime API dependency
+- Page-specific metadata and School structured data
+
+## Verified school information
+
+The site uses conservative public directory details: UDISE reference 01021301422, establishment year 2004, co-educational status, listed classes I–X, and Palhallan / Pattan, Baramulla, Jammu & Kashmir 193121.
+
+Third-party directory records are not a substitute for the school's current official records. Directory figures for enrolment and staff vary, so those figures are intentionally omitted. The current board affiliation, fees, admission dates, subject combinations, class availability, telephone, email and office hours must be confirmed by the school.
+
+## Photography
+
+Remote educational photographs are illustrative stock imagery and do not represent the actual school campus, staff or students. Replace them with school-approved images before the website is represented as the school's official website. This project does not claim school approval.
+
+## Maintainer
+
+Website credit: [Faizcasm](https://faizcasm.me)
