@@ -5,17 +5,13 @@ import { dirname, resolve } from 'node:path';
 const rootDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  build: {
-    rollupOptions: {
-      input: {
-        home: resolve(rootDir, 'index.html'),
-        about: resolve(rootDir, 'about.html'),
-        academics: resolve(rootDir, 'academics.html'),
-        campus: resolve(rootDir, 'campus.html'),
-        admissions: resolve(rootDir, 'admissions.html'),
-        contact: resolve(rootDir, 'contact.html'),
-        notFound: resolve(rootDir, '404.html')
-      }
-    }
+  input: {
+    home: resolve(rootDir, 'index.html'),
+    about: resolve(rootDir, 'about.html'),
+    academics: resolve(rootDir, 'academics.html'),
+    campus: resolve(rootDir, 'campus.html'),
+    admissions: resolve(rootDir, 'admissions.html'),
+    contact: resolve(rootDir, 'contact.html'),
+    notFound: resolve(rootDir, '404.html')
   }
 });
