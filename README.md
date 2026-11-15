@@ -58,3 +58,14 @@ Remote educational photographs are illustrative stock imagery and do not represe
 ## Maintainer
 
 Website credit: [Faizcasm](https://faizcasm.me)
+
+
+## Source notes for school facts
+
+The school identity, UDISE reference, establishment year, location, class range and listed facilities were cross-checked against public directory records:
+
+- [StackSchools school profile](https://stackschools.com/schools/01021301422/lal-e-arifa-memorial-springdales-pubschpalhallan)
+- [AdmitBee school profile](https://admitbee.in/jammu-and-kashmir/lal-e-arifa-memorial-springdales-pub-sch-palhallan)
+- [UDISE+ Know Your School portal](https://kys.udiseplus.gov.in/)
+
+The directory sources disagree on enrolment and staffing counts. Those figures are therefore excluded. Public listings are reference material, not final confirmation from the school management.
