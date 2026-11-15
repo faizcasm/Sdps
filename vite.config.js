@@ -1,16 +1,20 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
+
+const rootDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        home: resolve(__dirname, 'index.html'),
-        about: resolve(__dirname, 'about.html'),
-        academics: resolve(__dirname, 'academics.html'),
-        campus: resolve(__dirname, 'campus.html'),
-        admissions: resolve(__dirname, 'admissions.html'),
-        contact: resolve(__dirname, 'contact.html')
+        home: resolve(rootDir, 'index.html'),
+        about: resolve(rootDir, 'about.html'),
+        academics: resolve(rootDir, 'academics.html'),
+        campus: resolve(rootDir, 'campus.html'),
+        admissions: resolve(rootDir, 'admissions.html'),
+        contact: resolve(rootDir, 'contact.html'),
+        notFound: resolve(rootDir, '404.html')
       }
     }
   }
