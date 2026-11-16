@@ -1,0 +1,17 @@
+{
+  "name": "Springdales Public School, Palhallan",
+  "short_name": "Springdales",
+  "description": "Lal-e-Arifa Memorial Springdales Public School, Palhallan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfaf5",
+  "theme_color": "#123f35",
+  "icons": [
+    {
+      "src": "/assets/crest.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

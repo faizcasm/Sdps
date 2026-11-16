@@ -137,4 +137,17 @@ body{background:var(--paper)}
 .calendar-card p{font-size:11px;line-height:1.8;color:var(--muted);margin:0}
 .resource-faq{display:grid;grid-template-columns:.7fr 1.3fr;gap:7vw;margin-top:100px;padding-top:70px;border-top:1px solid var(--line)}
 .explore-section{padding-top:100px;padding-bottom:110px;background:#eef3eb}
+.copy-button{display:inline-flex;margin-top:14px;border:1px solid #c8d4c9;border-radius:999px;background:transparent;color:var(--pine);padding:9px 13px;font-size:9px;font-weight:700;cursor:pointer}
+.copy-button:hover{background:var(--pine);color:#fff}
+.copy-status{display:inline-block;margin-left:10px;font-size:9px;color:var(--clay)}
+.admission-checklist{display:grid;grid-template-columns:.8fr 1.2fr;gap:7vw;margin-top:85px;padding:35px;background:#e8efe7;border-radius:24px}
+.checklist-heading h2{font:500 clamp(36px,4vw,52px)/1.04 var(--serif);color:var(--pine);margin:0 0 15px}
+.checklist-heading h2 em{color:#a68150}
+.checklist-heading>p:not(.kicker){font-size:11px;line-height:1.85;color:var(--muted);max-width:330px}
+.checklist-heading strong{display:inline-block;margin-top:16px;font-size:10px;color:var(--clay);letter-spacing:.08em}
+.checklist-items{display:grid;gap:10px;align-content:center}
+.checklist-items label{display:flex;align-items:center;gap:13px;padding:17px 18px;background:var(--paper);border:1px solid #dfe7df;border-radius:14px;cursor:pointer;font-size:11px;color:var(--pine)}
+.checklist-items label:has(input:checked){background:#d7e5d8}
+.checklist-items input{width:17px;height:17px;accent-color:var(--pine)}
+@media(max-width:760px){.admission-checklist{grid-template-columns:1fr;margin-top:60px;padding:24px}.copy-button{display:block}}
 @media(max-width:760px){.student-life-grid,.news-layout,.resource-grid,.calendar-card,.resource-faq{grid-template-columns:1fr}.event-principles{grid-template-columns:1fr}.news-feature-art{height:200px}.student-life-card{min-height:190px}.resource-faq{gap:35px}}

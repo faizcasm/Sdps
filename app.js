@@ -5,6 +5,23 @@ const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');
 
+const storage = {
+  get(key) {
+    try {
+      return localStorage.getItem(key);
+    } catch {
+      return null;
+    }
+  },
+  set(key, value) {
+    try {
+      localStorage.setItem(key, value);
+    } catch {
+      // Preferences remain optional when storage is unavailable.
+    }
+  }
+};
+
 const readingControl = document.createElement('button');
 readingControl.className = 'reading-toggle';
 readingControl.type = 'button';
@@ -13,7 +30,7 @@ readingControl.setAttribute('aria-pressed', 'false');
 readingControl.innerHTML = '<span>A</span><small>+</small>';
 document.querySelector('.site-header')?.append(readingControl);
 
-const savedReadingMode = localStorage.getItem('springdales-reading-mode') === 'large';
+const savedReadingMode = storage.get('springdales-reading-mode') === 'large';
 if (savedReadingMode) {
   document.documentElement.classList.add('large-type');
   readingControl.setAttribute('aria-pressed', 'true');
@@ -23,7 +40,7 @@ readingControl.addEventListener('click', () => {
   const enabled = document.documentElement.classList.toggle('large-type');
   readingControl.setAttribute('aria-pressed', String(enabled));
   readingControl.setAttribute('aria-label', enabled ? 'Reset text size' : 'Increase text size');
-  localStorage.setItem('springdales-reading-mode', enabled ? 'large' : 'normal');
+  storage.set('springdales-reading-mode', enabled ? 'large' : 'normal');
 });
 
 if (menuButton && nav) {
@@ -65,6 +82,47 @@ window.addEventListener('scroll', setHeaderState, { passive: true });
 document.querySelectorAll('[data-year]').forEach((node) => {
   node.textContent = String(new Date().getFullYear());
 });
+
+document.querySelectorAll('[data-copy-value]').forEach((button) => {
+  button.addEventListener('click', async () => {
+    const value = button.getAttribute('data-copy-value');
+    const status = button.parentElement?.querySelector('[data-copy-status]');
+    if (!value) return;
+    try {
+      await navigator.clipboard.writeText(value);
+      if (status) status.textContent = 'Copied';
+    } catch {
+      if (status) status.textContent = 'Select and copy the address';
+    }
+    window.setTimeout(() => {
+      if (status) status.textContent = '';
+    }, 2200);
+  });
+});
+
+const checklist = document.querySelector('[data-checklist]');
+if (checklist) {
+  const key = 'springdales-admission-checklist';
+  let saved = {};
+  try {
+    saved = JSON.parse(storage.get(key) || '{}');
+  } catch {
+    saved = {};
+  }
+  const items = [...checklist.querySelectorAll('input[type="checkbox"]')];
+  const progress = checklist.querySelector('[data-checklist-progress]');
+  const updateChecklist = () => {
+    const completed = items.filter((item) => item.checked).length;
+    items.forEach((item) => { saved[item.id] = item.checked; });
+    storage.set(key, JSON.stringify(saved));
+    if (progress) progress.textContent = `${completed} of ${items.length} complete`;
+  };
+  items.forEach((item) => {
+    item.checked = saved[item.id] === true;
+    item.addEventListener('change', updateChecklist);
+  });
+  updateChecklist();
+}
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const revealItems = document.querySelectorAll('.reveal');

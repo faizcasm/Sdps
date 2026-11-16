@@ -1,6 +1,6 @@
 # Lal-e-Arifa Memorial Springdales Public School
 
-A refined, responsive, multi-page school website concept for Springdales Public School, Palhallan, Pattan, Baramulla, Jammu & Kashmir.
+A refined, responsive, multi-page school website for Springdales Public School, Palhallan, Pattan, Baramulla, Jammu & Kashmir. It is designed to be launch-ready while leaving school-controlled facts explicit and editable.
 
 ## Pages
 
@@ -8,6 +8,9 @@ A refined, responsive, multi-page school website concept for Springdales Public 
 - Our School: identity, context and educational values
 - Academics: class stages I–X, with clear notes for details that require school confirmation
 - Campus Life: facilities referenced in public directories and illustrative image gallery
+- Student Life: participation, wellbeing, community and activity guidance
+- News & Events: a publishing-ready hub for notices and school stories
+- Family Resources: admissions support, calendar structure and family FAQs
 - Admissions: family-oriented enquiry steps without invented fees or dates
 - Contact: location, directions and verified public identifiers
 
@@ -44,6 +47,8 @@ The Vite configuration includes every HTML page in the production build.
 - Semantic page structure, skip link, focus styles and reduced-motion support
 - Lightweight vanilla JavaScript; no UI framework or runtime API dependency
 - Page-specific metadata and School structured data
+- Installable `site.webmanifest`
+- Production-bundled navigation script with mobile menu, reading-size preference, copy-address action and admissions checklist persistence
 
 ## Verified school information
 
@@ -51,9 +56,9 @@ The site uses conservative public directory details: UDISE reference 01021301422
 
 Third-party directory records are not a substitute for the school's current official records. Directory figures for enrolment and staff vary, so those figures are intentionally omitted. The current board affiliation, fees, admission dates, subject combinations, class availability, telephone, email and office hours must be confirmed by the school.
 
-## Photography
+## Artwork and launch content
 
-Remote educational photographs are illustrative stock imagery and do not represent the actual school campus, staff or students. Replace them with school-approved images before the website is represented as the school's official website. This project does not claim school approval.
+The visual scenes are authored local illustrations and do not claim to depict the actual school campus, staff or students. They can be replaced with school-approved photography without changing the layout. Before launch, the school should supply approved contact details, current notices, academic information, policies and photographs.
 
 ## Maintainer
 
