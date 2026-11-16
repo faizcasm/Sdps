@@ -5,6 +5,27 @@ const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');
 
+const readingControl = document.createElement('button');
+readingControl.className = 'reading-toggle';
+readingControl.type = 'button';
+readingControl.setAttribute('aria-label', 'Increase text size');
+readingControl.setAttribute('aria-pressed', 'false');
+readingControl.innerHTML = '<span>A</span><small>+</small>';
+document.querySelector('.site-header')?.append(readingControl);
+
+const savedReadingMode = localStorage.getItem('springdales-reading-mode') === 'large';
+if (savedReadingMode) {
+  document.documentElement.classList.add('large-type');
+  readingControl.setAttribute('aria-pressed', 'true');
+}
+
+readingControl.addEventListener('click', () => {
+  const enabled = document.documentElement.classList.toggle('large-type');
+  readingControl.setAttribute('aria-pressed', String(enabled));
+  readingControl.setAttribute('aria-label', enabled ? 'Reset text size' : 'Increase text size');
+  localStorage.setItem('springdales-reading-mode', enabled ? 'large' : 'normal');
+});
+
 if (menuButton && nav) {
   const closeMenu = () => {
     menuButton.setAttribute('aria-expanded', 'false');
