@@ -31,6 +31,7 @@ if (menuButton && nav) {
     menuButton.setAttribute('aria-expanded', 'false');
     menuButton.setAttribute('aria-label', 'Open menu');
     nav.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
   };
 
   menuButton.addEventListener('click', () => {
@@ -38,9 +39,18 @@ if (menuButton && nav) {
     menuButton.setAttribute('aria-expanded', String(!open));
     menuButton.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
     nav.classList.toggle('is-open', !open);
+    document.body.classList.toggle('menu-open', !open);
   });
 
   nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+  document.addEventListener('click', (event) => {
+    if (nav.classList.contains('is-open') && !nav.contains(event.target) && !menuButton.contains(event.target)) {
+      closeMenu();
+    }
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 760) closeMenu();
+  });
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') closeMenu();
   });
