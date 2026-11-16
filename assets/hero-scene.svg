@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760">
+  <rect width="1000" height="760" fill="#dce8df"/>
+  <circle cx="790" cy="142" r="118" fill="#d6b579"/>
+  <path fill="#b5cbb7" d="M0 530 180 360l150 120 135-190 210 240 120-160 205 180v210H0Z"/>
+  <path fill="#8ba98e" d="m0 610 210-130 160 80 165-130 180 120 130-80 155 100v190H0Z"/>
+  <rect x="105" y="120" width="370" height="260" rx="8" fill="#f8f4e9"/>
+  <path fill="#315745" d="M105 120h370v42H105z"/>
+  <path fill="#d9e7db" d="M140 205h130v115H140zM305 205h130v115H305z"/>
+  <path fill="#b66d4c" d="M182 487c-42-78 3-143 43-143 40 0 73 66 40 143zM574 517c-34-72 7-124 42-124 36 0 64 54 36 124z"/>
+  <circle cx="227" cy="350" r="29" fill="#e1ae86"/><circle cx="616" cy="409" r="24" fill="#c98968"/>
+  <path fill="#16392c" d="M190 480h71l19 90h-104zM590 510h58l19 78h-91z"/>
+  <path fill="none" stroke="#16392c" stroke-width="6" stroke-linecap="round" d="M150 640h690M90 682h820"/>
+  <g fill="#16392c"><circle cx="72" cy="580" r="28"/><circle cx="888" cy="548" r="34"/></g>
+  <text x="54" y="710" fill="#16392c" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">A PLACE TO GROW</text>
+</svg>

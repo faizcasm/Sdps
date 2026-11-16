@@ -10,6 +10,9 @@ export default defineConfig({
     about: resolve(rootDir, 'about.html'),
     academics: resolve(rootDir, 'academics.html'),
     campus: resolve(rootDir, 'campus.html'),
+    studentLife: resolve(rootDir, 'student-life.html'),
+    events: resolve(rootDir, 'events.html'),
+    resources: resolve(rootDir, 'resources.html'),
     admissions: resolve(rootDir, 'admissions.html'),
     contact: resolve(rootDir, 'contact.html'),
     notFound: resolve(rootDir, '404.html')

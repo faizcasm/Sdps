@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#eee7d7"/>
+  <circle cx="690" cy="135" r="90" fill="#d8b878"/>
+  <path fill="#315745" d="M0 470 230 280l155 120 160-180 355 250v130H0Z"/>
+  <path fill="#16392c" d="M90 425h270v40H90z"/>
+  <path fill="#f8f4e9" d="M145 315h160v108H145z"/>
+  <path fill="none" stroke="#b66d4c" stroke-width="8" d="m200 365 55-32 44 43"/>
+  <circle cx="495" cy="390" r="34" fill="#e0ab86"/><path fill="#b66d4c" d="M450 550c4-101 20-151 45-151s50 50 55 151z"/>
+  <circle cx="585" cy="410" r="28" fill="#c88a6a"/><path fill="#d9e7db" d="M550 550c4-78 14-120 36-120s40 42 46 120z"/>
+  <text x="60" y="80" fill="#16392c" font-family="Georgia,serif" font-size="42">Keep asking why.</text>
+</svg>

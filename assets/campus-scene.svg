@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720">
+  <rect width="1000" height="720" fill="#d8e6d9"/>
+  <path fill="#a5c2a5" d="M0 480c180-120 300-30 470-150 170-120 310-85 530-10v400H0Z"/>
+  <path fill="#315745" d="M0 610c230-80 390-90 580-20 150 54 270 42 420-20v150H0Z"/>
+  <rect x="120" y="150" width="520" height="300" rx="14" fill="#f8f4e9"/>
+  <path fill="#16392c" d="M95 170 380 55l285 115H95Z"/>
+  <rect x="185" y="245" width="120" height="120" fill="#d8e8dc"/><rect x="340" y="245" width="120" height="120" fill="#d8e8dc"/><rect x="495" y="245" width="90" height="205" fill="#b66d4c"/>
+  <path fill="none" stroke="#d8bb82" stroke-width="8" d="M245 245v120M400 245v120"/>
+  <circle cx="780" cy="415" r="38" fill="#e0ab86"/><path fill="#16392c" d="M720 650c10-145 30-210 65-210s66 65 78 210z"/><path fill="#b66d4c" d="M715 475h145l-20 72H730z"/>
+  <text x="105" y="655" fill="#f8f4e9" font-family="Arial,sans-serif" font-size="17" letter-spacing="5">ROOM TO EXPLORE</text>
+</svg>
