@@ -29,3 +29,63 @@
 .faq-list details[open] summary span{transform:rotate(45deg)}
 .faq-list p{max-width:650px;margin:0;padding:0 50px 23px 2px;font-size:12px;line-height:1.9;color:var(--muted)}
 @media(max-width:760px){.site-header .reading-toggle{margin-left:auto;margin-right:5px}.guide-grid{grid-template-columns:1fr}.guide-card{min-height:230px}.faq-list{margin-top:32px}.faq-list summary{font-size:19px}.faq-list p{padding-right:10px}}
+
+/* 2026 visual refresh */
+:root{--pine:#123f35;--pine-deep:#092c25;--pine-soft:#3c6b5b;--paper:#fbfaf5;--cream:#f3efe3;--gold:#d5a967;--clay:#d06f4d;--ink:#19342c;--muted:#6b7b72;--line:#d8e0d8}
+body{background:var(--paper)}
+.utility-bar{background:var(--pine-deep);height:30px}
+.site-header{margin:13px max(3vw,16px) 0;border:1px solid #dfe5dc;border-radius:999px;height:76px;padding:0 max(2vw,20px);box-shadow:0 10px 24px #153d2b0d}
+.site-header.scrolled{box-shadow:0 16px 35px #153d2b1c}
+.brand img{width:48px;height:48px}
+.site-nav .nav-contact{border-radius:999px;padding:14px 20px}
+.hero{min-height:680px;margin-top:13px;border-radius:34px;padding-top:100px;padding-bottom:58px;background:linear-gradient(120deg,#0d332b 0%,#174b3e 55%,#255c4b 100%)}
+.hero:before{width:720px;height:720px;right:-260px;top:-410px;border-color:#ffffff20;box-shadow:0 0 0 85px #ffffff08,0 0 0 170px #ffffff04}
+.hero h1{font-size:clamp(56px,7vw,98px);letter-spacing:-.06em}
+.hero-intro{font-size:15px;max-width:500px}
+.button{border-radius:999px;min-height:52px;padding:0 23px}
+.hero-image-wrap{height:470px;border-radius:26px;box-shadow:0 24px 60px #061e173d;overflow:visible}
+.hero-image-wrap:after{inset:14px -14px -14px 14px;border-radius:26px}
+.hero-image{border-radius:26px;object-fit:cover}
+.since-card{border-radius:18px;left:-32px;bottom:60px;transform:rotate(-4deg);width:132px;height:145px}
+.intro-band{padding-top:120px;padding-bottom:120px}
+.facts-strip{background:#e8efe7;padding-top:30px;padding-bottom:30px}
+.journey-card,.guide-card,.value-card,.subject-card,.campus-card,.step-card{border-radius:20px}
+.journey-card{min-height:420px;padding:28px}
+.journey-graphic{border-radius:14px}
+.life-section{border-radius:34px;overflow:hidden;margin:0 max(3vw,16px)}
+.life-photo{height:640px}
+.life-photo img{object-fit:cover}
+.facility-item:first-child{padding-left:23px}
+.admissions-banner{margin:0 max(3vw,16px);border-radius:34px}
+.visit-card{border-radius:22px;box-shadow:0 16px 35px #18372a10}
+.map-art{border-radius:15px}
+.family-section{margin-top:0;background:#eef3eb}
+.guide-card{min-height:300px;padding:30px}
+.guide-card-featured{background:linear-gradient(145deg,#123f35,#28604d)}
+.faq-section{background:#f8f5ec}
+.faq-list details{transition:background .2s}
+.faq-list details[open]{background:#f0ece0}
+.faq-list summary{padding-left:16px;padding-right:16px}
+.faq-list p{padding-left:18px}
+.site-footer{margin-top:0}
+.page-hero{margin:13px max(3vw,16px) 0;border-radius:34px;padding-top:105px;padding-bottom:95px;background:linear-gradient(120deg,#0d332b,#245a4a)}
+.page-body{padding-top:105px;padding-bottom:105px}
+.image-panel img{border-radius:24px}
+.contact-card{border-radius:24px;background:linear-gradient(145deg,#123f35,#28604d)}
+@media(max-width:760px){
+  .site-header{margin:10px 12px 0;height:68px;border-radius:22px}
+  .site-nav{top:68px;left:12px;right:12px;border-radius:0 0 20px 20px}
+  .hero{margin-top:10px;border-radius:24px;padding-top:72px;min-height:auto}
+  .hero h1{font-size:clamp(48px,14vw,76px)}
+  .hero-visual{margin-top:50px;padding-right:12px}
+  .hero-image-wrap{height:330px}
+  .since-card{left:-10px;bottom:44px}
+  .intro-band{padding-top:78px;padding-bottom:78px}
+  .facts-strip{grid-template-columns:repeat(2,1fr);gap:10px}
+  .facts-strip>div{border-right:0;border-bottom:1px solid #d2ddd2}
+  .life-section,.admissions-banner,.page-hero{margin-left:12px;margin-right:12px;border-radius:24px}
+  .life-section{grid-template-columns:1fr}
+  .life-photo{height:360px}
+  .admissions-banner{grid-template-columns:1fr}
+  .admissions-banner-art{height:190px}
+}
