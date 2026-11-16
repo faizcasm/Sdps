@@ -73,8 +73,9 @@ body{background:var(--paper)}
 .image-panel img{border-radius:24px}
 .contact-card{border-radius:24px;background:linear-gradient(145deg,#123f35,#28604d)}
 @media(max-width:760px){
-  .site-header{margin:10px 12px 0;height:68px;border-radius:22px}
-  .site-nav{top:68px;left:12px;right:12px;border-radius:0 0 20px 20px}
+  body.menu-open{overflow:hidden}
+  .site-header{z-index:50;margin:10px 12px 0;height:68px;border-radius:22px}
+  .site-nav{top:68px;left:12px;right:12px;z-index:30;border-radius:0 0 20px 20px}
   .hero{margin-top:10px;border-radius:24px;padding-top:72px;min-height:auto}
   .hero h1{font-size:clamp(48px,14vw,76px)}
   .hero-visual{margin-top:50px;padding-right:12px}
